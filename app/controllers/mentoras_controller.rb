@@ -1,6 +1,6 @@
 class MentorasController < ApplicationController
   def index
-    # render json:  { oi: "teste" }
+    @mentoras = Mentora.all
   end
 
   def home

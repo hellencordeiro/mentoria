@@ -1,2 +1,12 @@
 <h1>Mentoras#index</h1>
-<p>oi, to na view</p>
+<p>
+    <ul>
+        <% @mentoras.each do |mentora| %>
+            <li>
+            <%= mentora.name %>
+            </li>
+        <% end %>
+    </ul>
+
+
+</p>
