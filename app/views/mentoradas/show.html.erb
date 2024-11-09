@@ -1,0 +1,12 @@
+<h1><%= @mentorada.nome %></h1>
+
+<p><%= @mentorada.contato %></p>
+<p><%= @mentorada.habilidades %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_mentorada_path(@mentorada) %></li>
+  <li><%= link_to "Destroy", mentorada_path(@mentorada), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>

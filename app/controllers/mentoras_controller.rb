@@ -4,6 +4,6 @@ class MentorasController < ApplicationController
   end
 
   def home
-    render json: { oi: "teste" }
+    render json: { oi: "teste 2" }
   end
 end

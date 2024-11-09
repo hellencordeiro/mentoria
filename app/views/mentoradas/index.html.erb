@@ -1,0 +1,21 @@
+<h1>Mentoradas#index</h1>
+
+<%= link_to "Create", new_mentorada_path  %>
+
+<ul>
+  <% @mentoradas.each do |mentorada| %>
+    <li>
+      <%= mentorada.nome %>
+
+      <ul>
+    <li><%= link_to "Show", mentorada_path(mentorada) %></li>
+  <li><%= link_to "Edit", edit_mentorada_path(mentorada) %></li>
+  <li><%= link_to "Destroy", mentorada_path(mentorada), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>
+    </li>
+  <% end %>
+</ul>
+
